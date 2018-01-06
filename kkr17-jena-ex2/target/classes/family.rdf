@@ -1,0 +1,49 @@
+<rdf:RDF
+    xmlns:rela="http://purl.org/vocab/relationship/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="http://family/adam">
+    <rela:parentOf>
+      <rdf:Description rdf:about="http://family/greg">
+        <rela:childOf>
+          <rdf:Description rdf:about="http://family/dotty">
+            <rela:parentOf rdf:resource="http://family/greg"/>
+            <rela:parentOf>
+              <rdf:Description rdf:about="http://family/edward">
+                <rela:childOf rdf:resource="http://family/dotty"/>
+                <rela:childOf rdf:resource="http://family/adam"/>
+                <rela:siblingOf rdf:resource="http://family/greg"/>
+              </rdf:Description>
+            </rela:parentOf>
+            <rela:spouseOf rdf:resource="http://family/adam"/>
+          </rdf:Description>
+        </rela:childOf>
+        <rela:childOf rdf:resource="http://family/adam"/>
+        <rela:parentOf>
+          <rdf:Description rdf:about="http://family/harriet">
+            <rela:childOf rdf:resource="http://family/greg"/>
+            <rela:childOf>
+              <rdf:Description rdf:about="http://family/fan">
+                <rela:parentOf rdf:resource="http://family/harriet"/>
+                <rela:spouseOf rdf:resource="http://family/greg"/>
+              </rdf:Description>
+            </rela:childOf>
+          </rdf:Description>
+        </rela:parentOf>
+        <rela:spouseOf rdf:resource="http://family/fan"/>
+        <rela:siblingOf rdf:resource="http://family/edward"/>
+      </rdf:Description>
+    </rela:parentOf>
+    <rela:parentOf rdf:resource="http://family/edward"/>
+    <rela:spouseOf rdf:resource="http://family/dotty"/>
+    <rela:siblingOf>
+      <rdf:Description rdf:about="http://family/beth">
+        <rela:spouseOf>
+          <rdf:Description rdf:about="http://family/chuck">
+            <rela:spouseOf rdf:resource="http://family/beth"/>
+          </rdf:Description>
+        </rela:spouseOf>
+        <rela:siblingOf rdf:resource="http://family/adam"/>
+      </rdf:Description>
+    </rela:siblingOf>
+  </rdf:Description>
+</rdf:RDF>

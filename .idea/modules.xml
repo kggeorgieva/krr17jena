@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kkr17-jena-ex2/kkr17-jena-ex2.iml" filepath="$PROJECT_DIR$/kkr17-jena-ex2/kkr17-jena-ex2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/krr17jena.iml" filepath="$PROJECT_DIR$/.idea/krr17jena.iml" />
+    </modules>
+  </component>
+</project>
